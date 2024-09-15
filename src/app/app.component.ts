@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+declare var $:any;
+declare function initPageProyectoTI([]):any;
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -10,4 +13,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'proyectoti';
+
+  constructor() {
+    setTimeout(() => {
+      initPageProyectoTI($);
+    }, 50);
+  }
 }
