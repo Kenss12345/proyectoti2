@@ -1,0 +1,16 @@
+<div class="home-page">
+    <h1>Welcome to Proyectoti</h1>
+    <p>This is the main presentation of the site.</p>
+  
+    <div class="hero-section">
+      <img src="assets/images/hero-image.jpg" alt="Hero Image">
+      <div class="upload-container" 
+        [class.dragging]="isDragging" 
+        (dragover)="onDragOver($event)" 
+        (dragleave)="onDragLeave($event)" 
+        (drop)="onDrop($event)">
+        <p>Arrastra aquí tu archivo .txt</p>
+      </div>
+    </div>
+    
+</div>
